@@ -23,8 +23,8 @@ def main():
             break
         # las preguntas que se hacen a la api
         messages.append({"role": "user", "content": content})
-        response = client.chat.completions.create(
-            model="davinci-002", messages=[messages])
+        response = client.chatcompletions.create(
+            model="GPT-3.5", messages=[messages])
 
         # completion = openai.Completion.create(model="davinci-002", prompt="Hello world")
         # print(response.choices[0].message)
